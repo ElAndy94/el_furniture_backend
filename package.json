@@ -1,0 +1,9 @@
+{
+  "name": "furniture_backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ElAndy94/el_furniture_backend",
+  "author": "Andrew Peliza",
+  "license": "MIT",
+  "private": false
+}
