@@ -1,9 +1,20 @@
 {
   "name": "furniture_backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "repository": "https://github.com/ElAndy94/el_furniture_backend",
   "author": "Andrew Peliza",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.8.11"
+  }
 }
