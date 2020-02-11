@@ -1,4 +1,4 @@
-# el_furniture_backend
+# El_furniture_backend
 
 This is what will connect to the el_furniture_frontend. 
 
