@@ -17,5 +17,4 @@ const storeSchema = mongoose.Schema({
   });
 
   // furnitureSchema.plugin(uniqueVal);
-  
   module.exports = mongoose.model('store', storeSchema);

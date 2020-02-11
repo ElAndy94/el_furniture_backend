@@ -7,6 +7,7 @@ const path = require('path');
 // const config = require('./config/config');
 
 const furnitureRoutes = require('./routes/furniture');
+const storeRoutes = require('./routes/store');
 // const authRoutes = require('./routes/auth');
 // const isAuth = require('./middleware/is-auth');
 
@@ -46,6 +47,6 @@ app.use((req, res, next) => {
 // app.use(isAuth);
 
 app.use('/api/furniture', furnitureRoutes);
-// app.use('/api/auth', authRoutes);
+app.use('/api/stores', storeRoutes);
 
 module.exports = app;
