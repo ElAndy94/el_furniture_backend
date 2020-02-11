@@ -6,7 +6,7 @@ const path = require('path');
 // const logger = require('./utility/logger');
 // const config = require('./config/config');
 
-// const classesRoutes = require('./routes/classes');
+const furnitureRoutes = require('./routes/furniture');
 // const authRoutes = require('./routes/auth');
 // const isAuth = require('./middleware/is-auth');
 
@@ -45,7 +45,7 @@ app.use((req, res, next) => {
 
 // app.use(isAuth);
 
-// app.use('/api/classes', classesRoutes);
+app.use('/api/furniture', furnitureRoutes);
 // app.use('/api/auth', authRoutes);
 
 module.exports = app;
