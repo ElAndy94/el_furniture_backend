@@ -4,25 +4,25 @@ const mongoose = require('mongoose');
 const app = express();
 const path = require('path');
 // const logger = require('./utility/logger');
-// const config = require('./config/config');
+const config = require('./config/config');
 
 const furnitureRoutes = require('./routes/furniture');
 const storeRoutes = require('./routes/store');
 // const authRoutes = require('./routes/auth');
 // const isAuth = require('./middleware/is-auth');
 
-// mongoose.set('useCreateIndex', true);
-// mongoose
-//   .connect(
-//     `mongodb://${config.name}:${config.pw}@ds125263.mlab.com:25263/react-gym`,
-//     { useNewUrlParser: true }
-//   )
-//   .then(() => {
-//     logger.info('Connected to the database!');
-//   })
-//   .catch(() => {
-//     logger.error('Connection failed');
-//   });
+mongoose.set('useCreateIndex', true);
+mongoose
+  .connect(
+    `mongodb://${config.name}:${config.pw}@ds125945.mlab.com:25945/elfurniture`,
+    { useNewUrlParser: true, useUnifiedTopology: true }
+  )
+  .then(() => {
+    console.log('Connected to the database!');
+  })
+  .catch(() => {
+    console.log('Connection failed');
+  });
 
 app.use(bodyParser.json());
 app.use(
