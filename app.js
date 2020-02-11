@@ -8,7 +8,7 @@ const config = require('./config/config');
 
 const furnitureRoutes = require('./routes/furniture');
 const storeRoutes = require('./routes/store');
-// const authRoutes = require('./routes/auth');
+const userRoutes = require('./routes/user');
 // const isAuth = require('./middleware/is-auth');
 
 mongoose.set('useCreateIndex', true);
@@ -47,6 +47,7 @@ app.use((req, res, next) => {
 // app.use(isAuth);
 
 app.use('/api/furniture', furnitureRoutes);
-app.use('/api/stores', storeRoutes);
+app.use('/api/store', storeRoutes);
+app.use('/api/user', userRoutes);
 
 module.exports = app;
