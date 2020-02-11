@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-// const uniqueVal = require('mongoose-unique-validator');
 
 const furnitureSchema = mongoose.Schema({
   name: {
@@ -27,7 +26,5 @@ const furnitureSchema = mongoose.Schema({
     required: true
   }
 });
-
-// furnitureSchema.plugin(uniqueVal);
 
 module.exports = mongoose.model('furniture', furnitureSchema);
