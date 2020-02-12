@@ -20,7 +20,7 @@ exports.createUser = (req, res) => {
     password: req.body.password,
     address: req.body.address,
     phoneNumber: req.body.phoneNumber,
-    orders: req.body.order
+    orders: req.body.orders
   });
   user
     .save()
@@ -35,7 +35,7 @@ exports.createUser = (req, res) => {
       });
     })
     .catch(error => {
-      console.log(error);
+      // console.log(error);
       res.status(500).json({
         message: 'Creating User Failed!'
       });

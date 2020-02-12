@@ -5,4 +5,6 @@ const StoreController = require('../controllers/store');
 
 router.get('', StoreController.getAllStores);
 
+router.post('', StoreController.createStore);
+
 module.exports = router;
