@@ -6,11 +6,15 @@ const storeSchema = mongoose.Schema({
     required: true
   },
   location: {
-    type: String,
+    type: {
+      address: String,
+      postcode: String
+    },
+    enum: ['address', 'postcode'],
     required: true
   },
   openingTimes: {
-    type: String,
+    type: Object,
     required: true
   }
 });

@@ -14,7 +14,6 @@ exports.getAllStores = (req, res) => {
 };
 
 exports.createStore = (req, res) => {
-  console.log(req.body);
   const store = new Store({
     name: req.body.name,
     location: req.body.location,
